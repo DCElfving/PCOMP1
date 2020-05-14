@@ -33,7 +33,7 @@ void loop()
   int yRaw = ReadAxis(yInput);
   int zRaw = ReadAxis(zInput);
 
-  if (digitalRead(buttonPin) == LOW)
+  if (digitalRead(buttonPin) == HIGH)
   {
     AutoCalibrate(xRaw, yRaw, zRaw);
   }
